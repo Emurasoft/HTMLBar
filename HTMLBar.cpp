@@ -3,7 +3,7 @@
 
 #include "stdafx.h"
 #include "resource.h"
-#include "..\mui\htmlbar_loce\resource.h"
+#include "mui\htmlbar_loce\resource.h"
 
 // the following line is needed before #include <etlframe.h>
 #define ETL_FRAME_CLASS_NAME CMyFrame
