@@ -1084,14 +1084,14 @@ public:
 		else {
 			CheckToolbarSize();
 			m_bVisible = false;
-			TCHAR sz[260];
-			TCHAR szAppName[80];
-			LoadString( EEGetLocaleInstanceHandle(), IDS_MENU_TEXT, szAppName, _countof( szAppName ) );
-			if( Editor_GetVersion( m_hWnd ) < 8000 ){
-				LoadString( EEGetLocaleInstanceHandle(), IDS_INVALID_VERSION, sz, _countof( sz ) );
-				MessageBox( m_hWnd, sz, szAppName, MB_OK | MB_ICONSTOP );
-				return;
-			}
+			//TCHAR sz[260];
+			//TCHAR szAppName[80];
+			//LoadString( EEGetLocaleInstanceHandle(), IDS_MENU_TEXT, szAppName, _countof( szAppName ) );
+			//if( Editor_GetVersion( m_hWnd ) < 8000 ){
+			//	LoadString( EEGetLocaleInstanceHandle(), IDS_INVALID_VERSION, sz, _countof( sz ) );
+			//	MessageBox( m_hWnd, sz, szAppName, MB_OK | MB_ICONSTOP );
+			//	return;
+			//}
 
 			HWND hDlg = CreateDialog( EEGetLocaleInstanceHandle(), MAKEINTRESOURCE( IDD_DIALOGBAR ), m_hWnd, NewProc );
 			_ASSERT( hDlg );
