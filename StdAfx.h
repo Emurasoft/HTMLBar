@@ -27,6 +27,7 @@
 #pragma warning( disable : 4244 )  // 'argument' : conversion from '__w64 unsigned int' to 'rsize_t', possible loss of data
 #include <strsafe.h>
 #include <vector>
+#include <string>
 #pragma warning( pop )
 
 using namespace std;
